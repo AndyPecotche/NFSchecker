@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>metricNFS</groupId>
+  <artifactId>metricNFS</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>NFSmetric</name>
+  <dependencies>
+	  <!-- The client -->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient</artifactId>
+  <version>0.16.0</version>
+</dependency>
+<!-- Hotspot JVM metrics-->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient_hotspot</artifactId>
+  <version>0.16.0</version>
+</dependency>
+<!-- Exposition HTTPServer-->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient_httpserver</artifactId>
+  <version>0.16.0</version>
+</dependency>
+<!-- Pushgateway exposition-->
+<dependency>
+  <groupId>io.prometheus</groupId>
+  <artifactId>simpleclient_pushgateway</artifactId>
+  <version>0.16.0</version>
+</dependency>
+  </dependencies>
+</project>
