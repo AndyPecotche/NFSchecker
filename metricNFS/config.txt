@@ -1,3 +1,2 @@
-Este archivo no admite comentarios, se debe respetar el siguiente formato:
 port=8080
 path=/ruta/al/archivo/de/control.txt
