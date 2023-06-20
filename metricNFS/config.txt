@@ -1,1 +1,2 @@
-/dir/ectorio
+port=8080
+path=/Web/WebSAP/carpetaControl/controlFile  
