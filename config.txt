@@ -1,1 +1,2 @@
-/Web/WebSAP/carpetaControl/controlFile
+port=8080
+path=/ruta/al/archivo/de/control.txt
