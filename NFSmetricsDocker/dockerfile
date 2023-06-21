@@ -1,0 +1,8 @@
+FROM openjdk:8u212-jre-alpine3.9
+WORKDIR /app
+COPY ./app /app
+ARG path
+ARG archivo
+RUN chmod 777 /app/run.sh
+RUN echo port=6789 >> /app/config.txt
+RUN echo path=${path}/${archivo} >> /app/config.txt

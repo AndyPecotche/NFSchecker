@@ -1,0 +1,21 @@
+version: '3'
+services:
+  NFSmetrica:
+    image: apecotche/nfsmetrics:v1.0.0
+    container_name: nfsmetrics
+    restart: unless-stopped
+    build:
+      args:
+        path: $DIR
+        archivo: $ARCHIVO
+    ports:
+      - "8080:6789"
+    volumes:
+      - NFS:${DIR}:ro
+    command: sh /app/run.sh
+volumes:
+  NFS:
+    driver_opts:
+      type: "nfs"
+      o: "addr=$IP_REMOTA,$PARAM,ro"
+      device: ":${DIR}"
